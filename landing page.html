@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffy Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #3e3232;
+  color: #333;
+}
+
+header {
+  background-color: #f0d4c5;
+  padding-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: #f0d4c5;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  background-image: url('https://i.imgur.com/1M0IWHB.jpg');
+  background-size: cover;
+  color: white;
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  color: #f3b790;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #4f3422;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section {
+  background-color: #f8e6dc;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cards, .shakes, .blog-posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 1rem;
+}
+
+.card .overlay button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  background: #f3b790;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+.shake-card img {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+.shake-card {
+  width: 250px;
+  background: #fff6f0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.shake-card h4 {
+  margin: 0.5rem 0;
+}
+
+
+.shake-card button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 1rem;
+  background-color: #4f3422;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.blog-card {
+  width: 250px;
+  background: #fff6f0;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+  width: 100%;
+ border-radius: 10%;
+  margin-bottom: 0.8rem;
+}
+
+.blog-card h4 {
+  margin: 0.5rem 0;
+}
+
+.blog-card button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #4f3422;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  background: #1f1b1b;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-grid div h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-grid div p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">☕ Coffy Solutions</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">🔍</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>FRESHLY ROASTED</h2>
+      <h1>COFFEE</h1>
+      <button>Shop Now</button>
+    </div>
+  </header>
+
+  <section class="categories">
+    <h2>TOP CATEGORIES</h2>
+    <p>Explore The Recent Most Bought Drinks This Week</p>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/coffee-1873397_1280.jpg" alt="Coffee Mocha" />
+        <div class="overlay">Coffee Mocha<br><button>View More</button></div>
+      </div>
+      <div class="card">
+        <img src="./assets/coffee-2714970_1280.jpg" alt="Espresso Americano" />
+        <div class="overlay">Espresso Americano<br><button>View More</button></div>
+      </div>
+      <div class="card">
+        <img src="./assets/coffee-6154681_1280.jpg" alt="Cappuccino" />
+        <div class="overlay">Cappuccino<br><button>View More</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="milkshakes">
+    <h2>TOP MILK SHAKES</h2>
+    <p>Explore The Recent Most Bought Shakes This Week</p>
+    <div class="shakes">
+      <div class="shake-card">
+        <img src ="./solution/assets/mocha shake.jpg" alt= "Mocha Shake" />
+        <h4>Mocha shake</h4>
+        $20.00<br>
+        likes : 44k<br>
+        <button>Buy Now</button>
+        </div>
+      <div class="shake-card">
+        <img src = "./solution/assets/images/levender shake.jpg" alt="levender shake" />
+        <h4>levender shake</h4>
+        $20.00<br>
+        likes : 23k<br>
+        <button>Buy Now</button>
+    </div>
+      <div class="shake-card">
+        <img src = "./assets/camerel shake.jpg" alt = "camerel shake" />
+        <h4>camerel shake</h4>
+        $25.00<br>
+        likes : 20k<br>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="blogs">
+    <h2>LATEST BLOGS</h2>
+    <p>Explore The Recent Most Bought Shakes This Week</p>
+    <div class="blog-posts">
+      <div class="blog-card">
+        <img src="./assets/download.jpg" />
+        <h4>Coffee Connoisseur</h4>
+        <p>Discover the stories behind each brew and explore how to brew the perfect cup at home. Taste the difference!</p>
+        <button>Read More</button>
+      </div>
+      <div class="blog-card">
+        <img src="./assets/download (1).jpg" />
+        <h4>Coffee Connoisseur</h4>
+        <p>Learn from the best as coffee lovers gather to share insights, latte art tips, and new trends in roasting.</p>
+        <button>Read More</button>
+      </div>
+      <div class="blog-card">
+        <img src="./assets/Screenshot 2025-07-01 225609.png" />
+        <h4>Coffee Connoisseur</h4>
+        <p>Explore café culture, specialty drinks, and what makes coffee an essential part of social bonding worldwide.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Products</h4>
+        <p>Shoes</p>
+      </div>
+      <div>
+        <h4>Category</h4>
+        <p>Men</p>
+        <p>New In</p>
+        <p>Weekly Pick</p>
+      </div>
+      <div>
+        <h4>Company Info</h4>
+        <p>About us</p>
+        <p>Contact us</p>
+        <p>Support</p>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <p>📷 Instagram</p>
+        <p>📘 Facebook</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Data settings | Cookie settings | Privacy Policy | Terms And Conditions | Imprint</p>
+    </div>
+  </footer>
+</body>
+</html>
